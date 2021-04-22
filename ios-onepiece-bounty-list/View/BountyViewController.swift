@@ -24,29 +24,43 @@ class BountyViewController: UIViewController {
     
 }
 
-extension BountyViewController: UITableViewDelegate {
+extension BountyViewController: UICollectionViewDelegate {
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "showDetail", sender: indexPath.row)
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showDetail", sender: indexPath.item)
     }
     
 }
 
-extension BountyViewController: UITableViewDataSource {
+extension BountyViewController: UICollectionViewDataSource {
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel.numOfBountyInfoList
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? ListCell else {
-            return UITableViewCell()
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GridCell", for: indexPath) as? GridCell else {
+            return UICollectionViewCell()
         }
-        let bountyInfo = viewModel.bountyInfo(at: indexPath.row)
+        let bountyInfo = viewModel.bountyInfo(at: indexPath.item)
         
         cell.update(info: bountyInfo)
         
         return cell
+    }
+
+}
+
+extension BountyViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let itemSpacing: CGFloat = 10
+        let textAreaHeight: CGFloat = 65
+        
+        let width: CGFloat = (collectionView.bounds.width - itemSpacing)/2
+        let height: CGFloat = width * 10/7 + textAreaHeight
+        
+        return CGSize(width: width, height: height)
     }
     
 }

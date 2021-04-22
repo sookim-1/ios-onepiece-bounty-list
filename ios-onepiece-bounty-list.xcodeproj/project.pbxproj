@@ -15,6 +15,7 @@
 		764F323D2631A58A00CEF996 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764F323B2631A58A00CEF996 /* LaunchScreen.storyboard */; };
 		764F32472631ABBE00CEF996 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764F32462631ABBE00CEF996 /* ListCell.swift */; };
 		764F324C2631B39E00CEF996 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764F324B2631B39E00CEF996 /* DetailViewController.swift */; };
+		7662F7832631E9400052210B /* GridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662F7822631E9400052210B /* GridCell.swift */; };
 		76A6A1052631D6C400ED5EC9 /* BountyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A6A1042631D6C400ED5EC9 /* BountyInfo.swift */; };
 		76A6A10A2631D95400ED5EC9 /* BountyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A6A1092631D95400ED5EC9 /* BountyViewModel.swift */; };
 		76A6A10E2631DABA00ED5EC9 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A6A10D2631DABA00ED5EC9 /* DetailViewModel.swift */; };
@@ -31,6 +32,7 @@
 		764F323E2631A58A00CEF996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		764F32462631ABBE00CEF996 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		764F324B2631B39E00CEF996 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7662F7822631E9400052210B /* GridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCell.swift; sourceTree = "<group>"; };
 		76A6A1042631D6C400ED5EC9 /* BountyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BountyInfo.swift; sourceTree = "<group>"; };
 		76A6A1092631D95400ED5EC9 /* BountyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BountyViewModel.swift; sourceTree = "<group>"; };
 		76A6A10D2631DABA00ED5EC9 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				764F324B2631B39E00CEF996 /* DetailViewController.swift */,
 				764F32342631A58800CEF996 /* BountyViewController.swift */,
 				764F32462631ABBE00CEF996 /* ListCell.swift */,
+				7662F7822631E9400052210B /* GridCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				764F324C2631B39E00CEF996 /* DetailViewController.swift in Sources */,
 				76A6A10A2631D95400ED5EC9 /* BountyViewModel.swift in Sources */,
 				764F32312631A58800CEF996 /* AppDelegate.swift in Sources */,
+				7662F7832631E9400052210B /* GridCell.swift in Sources */,
 				76A6A1052631D6C400ED5EC9 /* BountyInfo.swift in Sources */,
 				764F32332631A58800CEF996 /* SceneDelegate.swift in Sources */,
 				76A6A10E2631DABA00ED5EC9 /* DetailViewModel.swift in Sources */,
