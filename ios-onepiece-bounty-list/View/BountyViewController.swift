@@ -9,16 +9,16 @@ import UIKit
 
 class BountyViewController: UIViewController {
 
-    let nameList = ["brook", "chopper", "franky", "luffy", "nami", "robin", "sanji", "zoro"]
-    let bountyList = [33000000, 50, 44000000, 300000000, 16000000, 80000000, 77000000, 120000000]
+    let viewModel = BountyViewModel()
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             guard let vc = segue.destination as? DetailViewController,
                   let index = sender as? Int else { return }
             
-            vc.name = nameList[index]
-            vc.bounty = bountyList[index]
+            let bountyInfo = viewModel.bountyInfo(at: index)
+            
+            vc.viewModel.update(model: bountyInfo) 
         }
     }
     
@@ -32,22 +32,19 @@ extension BountyViewController: UITableViewDelegate {
     
 }
 
-
 extension BountyViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return bountyList.count
+        return viewModel.numOfBountyInfoList
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? ListCell else {
             return UITableViewCell()
         }
+        let bountyInfo = viewModel.bountyInfo(at: indexPath.row)
         
-        let img = UIImage(named: "\(nameList[indexPath.row])")
-        cell.imgView.image = img
-        cell.nameLabel.text = nameList[indexPath.row]
-        cell.bountyLabel.text = "\(bountyList[indexPath.row])"
+        cell.update(info: bountyInfo)
         
         return cell
     }

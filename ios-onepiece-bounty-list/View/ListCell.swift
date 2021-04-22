@@ -13,4 +13,9 @@ class ListCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var bountyLabel: UILabel!
     
+    func update(info: BountyInfo) {
+        imgView.image = UIImage(named: "\(info.name)")
+        nameLabel.text = info.name
+        bountyLabel.text = "\(info.bounty)"
+    }
 }

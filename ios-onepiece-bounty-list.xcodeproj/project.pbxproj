@@ -15,6 +15,9 @@
 		764F323D2631A58A00CEF996 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764F323B2631A58A00CEF996 /* LaunchScreen.storyboard */; };
 		764F32472631ABBE00CEF996 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764F32462631ABBE00CEF996 /* ListCell.swift */; };
 		764F324C2631B39E00CEF996 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764F324B2631B39E00CEF996 /* DetailViewController.swift */; };
+		76A6A1052631D6C400ED5EC9 /* BountyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A6A1042631D6C400ED5EC9 /* BountyInfo.swift */; };
+		76A6A10A2631D95400ED5EC9 /* BountyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A6A1092631D95400ED5EC9 /* BountyViewModel.swift */; };
+		76A6A10E2631DABA00ED5EC9 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A6A10D2631DABA00ED5EC9 /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		764F323E2631A58A00CEF996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		764F32462631ABBE00CEF996 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		764F324B2631B39E00CEF996 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		76A6A1042631D6C400ED5EC9 /* BountyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BountyInfo.swift; sourceTree = "<group>"; };
+		76A6A1092631D95400ED5EC9 /* BountyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BountyViewModel.swift; sourceTree = "<group>"; };
+		76A6A10D2631DABA00ED5EC9 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +66,44 @@
 		764F322F2631A58800CEF996 /* ios-onepiece-bounty-list */ = {
 			isa = PBXGroup;
 			children = (
+				76A6A10C2631DAA000ED5EC9 /* View */,
+				76A6A1082631D94400ED5EC9 /* ViewModel */,
+				76A6A1032631D6BA00ED5EC9 /* Model */,
 				764F32302631A58800CEF996 /* AppDelegate.swift */,
 				764F32322631A58800CEF996 /* SceneDelegate.swift */,
-				764F32342631A58800CEF996 /* BountyViewController.swift */,
 				764F32362631A58800CEF996 /* Main.storyboard */,
 				764F32392631A58A00CEF996 /* Assets.xcassets */,
 				764F323B2631A58A00CEF996 /* LaunchScreen.storyboard */,
 				764F323E2631A58A00CEF996 /* Info.plist */,
-				764F32462631ABBE00CEF996 /* ListCell.swift */,
-				764F324B2631B39E00CEF996 /* DetailViewController.swift */,
 			);
 			path = "ios-onepiece-bounty-list";
+			sourceTree = "<group>";
+		};
+		76A6A1032631D6BA00ED5EC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				76A6A1042631D6C400ED5EC9 /* BountyInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		76A6A1082631D94400ED5EC9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				76A6A1092631D95400ED5EC9 /* BountyViewModel.swift */,
+				76A6A10D2631DABA00ED5EC9 /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		76A6A10C2631DAA000ED5EC9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				764F324B2631B39E00CEF996 /* DetailViewController.swift */,
+				764F32342631A58800CEF996 /* BountyViewController.swift */,
+				764F32462631ABBE00CEF996 /* ListCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +179,11 @@
 				764F32352631A58800CEF996 /* BountyViewController.swift in Sources */,
 				764F32472631ABBE00CEF996 /* ListCell.swift in Sources */,
 				764F324C2631B39E00CEF996 /* DetailViewController.swift in Sources */,
+				76A6A10A2631D95400ED5EC9 /* BountyViewModel.swift in Sources */,
 				764F32312631A58800CEF996 /* AppDelegate.swift in Sources */,
+				76A6A1052631D6C400ED5EC9 /* BountyInfo.swift in Sources */,
 				764F32332631A58800CEF996 /* SceneDelegate.swift in Sources */,
+				76A6A10E2631DABA00ED5EC9 /* DetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
