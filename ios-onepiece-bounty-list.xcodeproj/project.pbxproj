@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		764F32312631A58800CEF996 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764F32302631A58800CEF996 /* AppDelegate.swift */; };
 		764F32332631A58800CEF996 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764F32322631A58800CEF996 /* SceneDelegate.swift */; };
-		764F32352631A58800CEF996 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764F32342631A58800CEF996 /* ViewController.swift */; };
+		764F32352631A58800CEF996 /* BountyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764F32342631A58800CEF996 /* BountyViewController.swift */; };
 		764F32382631A58800CEF996 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764F32362631A58800CEF996 /* Main.storyboard */; };
 		764F323A2631A58A00CEF996 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 764F32392631A58A00CEF996 /* Assets.xcassets */; };
 		764F323D2631A58A00CEF996 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764F323B2631A58A00CEF996 /* LaunchScreen.storyboard */; };
+		764F32472631ABBE00CEF996 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764F32462631ABBE00CEF996 /* ListCell.swift */; };
+		764F324C2631B39E00CEF996 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764F324B2631B39E00CEF996 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		764F322D2631A58800CEF996 /* ios-onepiece-bounty-list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-onepiece-bounty-list.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		764F32302631A58800CEF996 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		764F32322631A58800CEF996 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		764F32342631A58800CEF996 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		764F32342631A58800CEF996 /* BountyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BountyViewController.swift; sourceTree = "<group>"; };
 		764F32372631A58800CEF996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		764F32392631A58A00CEF996 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		764F323C2631A58A00CEF996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		764F323E2631A58A00CEF996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		764F32462631ABBE00CEF996 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		764F324B2631B39E00CEF996 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				764F32302631A58800CEF996 /* AppDelegate.swift */,
 				764F32322631A58800CEF996 /* SceneDelegate.swift */,
-				764F32342631A58800CEF996 /* ViewController.swift */,
+				764F32342631A58800CEF996 /* BountyViewController.swift */,
 				764F32362631A58800CEF996 /* Main.storyboard */,
 				764F32392631A58A00CEF996 /* Assets.xcassets */,
 				764F323B2631A58A00CEF996 /* LaunchScreen.storyboard */,
 				764F323E2631A58A00CEF996 /* Info.plist */,
+				764F32462631ABBE00CEF996 /* ListCell.swift */,
+				764F324B2631B39E00CEF996 /* DetailViewController.swift */,
 			);
 			path = "ios-onepiece-bounty-list";
 			sourceTree = "<group>";
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				764F32352631A58800CEF996 /* ViewController.swift in Sources */,
+				764F32352631A58800CEF996 /* BountyViewController.swift in Sources */,
+				764F32472631ABBE00CEF996 /* ListCell.swift in Sources */,
+				764F324C2631B39E00CEF996 /* DetailViewController.swift in Sources */,
 				764F32312631A58800CEF996 /* AppDelegate.swift in Sources */,
 				764F32332631A58800CEF996 /* SceneDelegate.swift in Sources */,
 			);
